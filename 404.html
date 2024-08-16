@@ -427,14 +427,14 @@
 
   function load_artalk() {
     if (!el) return;
-    utils.css('http://89.40.8.224:3366/dist/Artalk.css');
-    utils.js('http://89.40.8.224:3366/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('http://vps.thcwl.com:2053/dist/Artalk.css');
+    utils.js('http://vps.thcwl.com:2053/dist/Artalk.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
         pageKey: path,
         pageTitle: '',
-        server: 'http://89.40.8.224:3366/',
+        server: 'http://vps.thcwl.com:2053',
         placeholder: '',
         site: "市井俗人",
         darkMode: 'auto'
