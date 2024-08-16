@@ -427,8 +427,8 @@
 
   function load_artalk() {
     if (!el) return;
-    utils.css('https://unpkg.com/artalk@2.7/dist/Artalk.css');
-    utils.js('https://unpkg.com/artalk@2.7/dist/Artalk.js', {defer: true}).then(function () {
+    utils.css('https://unpkg.com/artalk@2.8.7/dist/Artalk.css');
+    utils.js('https://unpkg.com/artalk@2.8.7/dist/Artalk.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
       const artalk = Artalk.init({
         el: '#artalk_container',
